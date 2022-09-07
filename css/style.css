@@ -1,0 +1,95 @@
+html {
+    background: darkslategray;
+}
+
+body {
+    width: 640px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid black;
+    margin-bottom: 0.5em;
+}
+
+.escolhaDados {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    background: cadetblue;
+    border: 1px solid mediumaquamarine;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #666;
+}
+
+form table {
+    width: 100%;
+}
+
+form td {
+    width: 50%;
+    padding: 5px;
+    text-align: right;
+}
+
+form label {
+    font-size: 17px;
+}
+
+form .input {
+    font-size: 16px;
+    text-align: left;
+
+}
+
+form .input-entrada {
+    width: 50%;
+    padding: 3px;
+    background: darkseagreen;
+    border: solid 1px seagreen;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #666;
+
+}
+
+form .enviar {
+    font-size: 18px;
+    text-align: center;
+}
+
+form .play {
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: bold;
+    height: 30px;
+    width: 40%;
+    background: lightgreen;
+    border: solid 1px darkslategray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #666;
+    cursor: pointer; 
+    transition: 0.1s all;
+}
+
+.play:hover {
+    background: rgb(79, 248, 79);
+
+}
+
+.play:active {
+    background-color: rgb(217, 255, 0) ;
+}
+
+p {
+    margin-top: 100px;
+    font-size: 20px;
+    color: greenyellow;
+
+}
