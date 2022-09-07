@@ -17,6 +17,30 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+.atalhos {
+    width: 100%;    
+    justify-content: space-around;
+    font-size: 22px;
+    /* topo | direita | inferior | esquerda */
+    margin: 1em 0 1em 0;
+    
+        
+}
+.atalhos ul{
+    text-align: center;
+}
+
+.atalhos li{
+    color: orange;
+    margin: 0 0 0 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.atalhos li:hover{
+    color: blueviolet;
+}
+
 .escolhaDados {
     padding: 20px;
     display: flex;
@@ -96,7 +120,7 @@ form .play {
     align-content: stretch;
     justify-content: center;    
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
     margin: 100px auto;
     background: rgb(65, 109, 110);
     border: 1px solid mediumaquamarine;
@@ -115,7 +139,7 @@ div .apresentaDados {
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    border: 1px solid black;
+    border: 1px solid rgb(36, 36, 36);
     border-radius: 4px;
     box-shadow: 2px 3px 4px #666;
     
