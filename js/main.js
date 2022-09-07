@@ -1,5 +1,5 @@
 
-const paragrafo = document.querySelector('p');
+const paragrafo = document.querySelector('.AprensentaNumeros');
 
 
 
