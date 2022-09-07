@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Roll or Die</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Rolar de Dados Virtual
+        </h1>
+    </header>
+    <main>
+
+        <form>
+            <div class="escolhaDados">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="ladosDado">Lados de um dado:</label>
+                        </td>
+                        <td class="input">
+                            <input class="input-entrada" type="number" id="ladosDado" name="ladosDado" min="1" max="20" value="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nDados">Numero de dados:</label>
+                        </td>
+                        <td class="input">
+                            <input class="input-entrada" type="number" id="nDados" name="nDados" min="1" max="10" value ="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="enviar">
+                            <input class="play" type="button" value="Play">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+           
+        </form>
+       
+        <p></p>
+    </main>
+    <footer>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
