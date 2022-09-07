@@ -1,5 +1,5 @@
 
-const paragrafo = document.querySelector('.AprensentaNumeros');
+const divisaoResultados = document.querySelector('.blocoNumeros');
 
 
 
@@ -7,21 +7,15 @@ function generateDice() {
     const ladosDado = document.getElementById('ladosDado').value;
     const nDados = document.getElementById('nDados').value;
 
-    let result = "Numeros = ";
-   
+    let resultHtml = "";   
 
-    for (let i = 0; i < nDados; i++) {
-        
-           
-        result += " | " + String(Math.floor(Math.random() * ladosDado) + 1);
-
-        if(i===(nDados-1)){
-            result+= " | ";
-        }
+    for (let i = 0; i < nDados; i++) {              
+        resultHtml += "<div class='apresentaDados'><p>" + String(Math.floor(Math.random() * ladosDado) + 1) + "</p></div>";        
     }
 
-    console.log(result);
-    paragrafo.textContent = result;
+    console.log(resultHtml);
+
+    divisaoResultados.innerHTML = resultHtml;
 }
 
 document.querySelector('.play').onclick = generateDice;
