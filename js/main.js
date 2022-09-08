@@ -4,9 +4,11 @@ const atalhos = document.querySelectorAll(".atalhos li");
 const ladosDado = document.getElementById('ladosDado');
 const nDados = document.getElementById('nDados');
 const botaoOrdenar = document.querySelector("#ordernarButton");
+const somaDiv = document.querySelector('.soma');
 
 let arrayNumeros = [];
-console.log(typeof arrayNumeros);
+
+
 
 // 
 
@@ -22,7 +24,7 @@ for (let i = 0; i < atalhos.length; i++) {
 document.querySelector('.play').onclick = generateDice;
 
 botaoOrdenar.onclick = function () {
-    if (arrayNumeros == 0){
+    if (arrayNumeros == 0) {
         console.log("Sem Numeros");
         publicar("null");
     }
@@ -42,6 +44,7 @@ function generateDice() {
         resultHtml += padraoTexto(RandNumero);
     }
 
+    turnOnSoma(arrayNumeros);
 
     divisaoResultados.innerHTML = resultHtml;
 }
@@ -72,6 +75,13 @@ function padraoTexto(texto) {
     return `<div class='apresentaDados'><p>${String(texto)}</p></div>`;
 }
 
-
+function turnOnSoma(numeroDiv) {
+    let soma = 0;
+    for (let i = 0; i < numeroDiv.length; i++) {
+         soma += numeroDiv[i];        
+    }
+    somaDiv.innerHTML = `<p> ${soma} </p>`;
+    somaDiv.classList.add('soma-ativada');
+}
 
 
