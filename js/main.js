@@ -25,12 +25,14 @@ document.querySelector('.play').onclick = generateDice;
 
 botaoOrdenar.onclick = function () {
     if (arrayNumeros == 0) {
-        console.log("Sem Numeros");
-        publicar("null");
+        
+        divisaoResultados.innerHTML = "<p>Sem numeros!</p>";
+    } else {
+        ordernamento(arrayNumeros);
+        publicar(arrayNumeros);
     }
-    ordernamento(arrayNumeros);
-    publicar(arrayNumeros);
 }
+
 
 
 // Funções
@@ -78,7 +80,7 @@ function padraoTexto(texto) {
 function turnOnSoma(numeroDiv) {
     let soma = 0;
     for (let i = 0; i < numeroDiv.length; i++) {
-         soma += numeroDiv[i];        
+        soma += numeroDiv[i];
     }
     somaDiv.innerHTML = `<p> ${soma} </p>`;
     somaDiv.classList.add('soma-ativada');
