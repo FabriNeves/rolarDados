@@ -31,7 +31,7 @@ h1 {
 }
 
 .atalhos li{
-    color: orange;
+    color: greenyellow;
     margin: 0 0 0 20px;
     display: inline-block;
     cursor: pointer;
@@ -50,7 +50,7 @@ h1 {
     background: cadetblue;
     border: 1px solid mediumaquamarine;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px #666;
+    box-shadow: 1px 1px 2px black;
 }
 
 form table {
@@ -79,7 +79,7 @@ form .input-entrada {
     background: darkseagreen;
     border: solid 1px seagreen;
     border-radius: 2px;
-    box-shadow: 1px 1px 2px #666;
+    box-shadow: 1px 1px 2px black;
 
 }
 
@@ -111,6 +111,40 @@ form .play {
     background-color: rgb(217, 255, 0);
 }
 
+.containerBotoes {
+    width: 67%;
+    padding: 100px 0 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.botoesNav2{
+    font-size: 17px;    
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0px 10px 10px 0px;    
+    width: 100px;
+    background: lightgreen;
+    border: solid 1px darkslategray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.botoesNav2:hover {
+    background: rgb(79, 248, 79);
+
+}
+
+.botoesNav2:active {
+    background-color: rgb(217, 255, 0);
+}
+
+
 .blocoNumeros {
 
     padding: 20px;
@@ -121,11 +155,11 @@ form .play {
     justify-content: center;    
     align-items: flex-start;
     width: 60%;
-    margin: 100px auto;
-    background: rgb(65, 109, 110);
+    margin: 0 auto;
+    background: cadetblue;
     border: 1px solid mediumaquamarine;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px #666;
+    box-shadow: 1px 1px 2px black;
     
 }
 
