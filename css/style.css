@@ -202,3 +202,14 @@ div .apresentaDados {
     font-weight: bold;
 }
 
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer li{
+    color: #666;
+    display: inline;
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
