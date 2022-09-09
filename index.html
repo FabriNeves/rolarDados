@@ -22,6 +22,7 @@
                 <li>D10</li>
                 <li>D12</li>
                 <li>D20</li>
+                <li>D100</li>
             </ul>
         </div>
     </header>
@@ -35,14 +36,13 @@
                             <label for="ladosDado">Lados de um dado:</label>
                         </td>
                         <td class="input">
-                            <input class="input-entrada" type="number" id="ladosDado" name="ladosDado" min="1" max="20"
+                            <input class="input-entrada" type="number" id="ladosDado" name="ladosDado" min="1" max="100"
                                 value="20">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="nDados">
-                                 de dados:</label>
+                            <label for="nDados">Numero de dados:</label>
                         </td>
                         <td class="input">
                             <input class="input-entrada" type="number" id="nDados" name="nDados" min="1" max="32"
@@ -59,23 +59,24 @@
 
         </form>
         <div class="containerBotoes">
-         <div id="ordernarButton" class="botoesNav2">
-            Ordenar
-         </div>
-        </div> 
+            <div id="ordernarButton" class="botoesNav2">Ordenar</div>
+            <div class="botoesNav2"> Agrupar </div>
+            <div class="botoesNav2" id="numUnicosButton"> Numeros únicos </div>
+        </div>
         <div class="blocoNumeros">
             <h2>
                 Aperte Play !
             </h2>
         </div>
-       <div class="soma"></div>
+        <div class="soma"></div>
+
     </main>
     <footer>
         <ul>
             <li>&copy; Copyright Rolar Dados - 2022</li>
             <li><a href="https://github.com/FaSn0w">Contato</a></li>
             <li>Ver 1.0</li>
-        </ul>        
+        </ul>
     </footer>
     <script src="./js/main.js"></script>
 </body>

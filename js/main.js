@@ -4,10 +4,11 @@ const atalhos = document.querySelectorAll(".atalhos li");
 const ladosDado = document.getElementById('ladosDado');
 const nDados = document.getElementById('nDados');
 const botaoOrdenar = document.querySelector("#ordernarButton");
+const botaoNumUnicos = document.querySelector("#numUnicosButton");
 const somaDiv = document.querySelector('.soma');
 
 let arrayNumeros = [];
-
+let arrayNumerosAgrupados = [];
 
 
 // 
@@ -22,6 +23,12 @@ for (let i = 0; i < atalhos.length; i++) {
 // 
 
 document.querySelector('.play').onclick = generateDice;
+
+botaoNumUnicos.onclick = function() {
+    ordernamento(arrayNumeros);
+    const arrayElementosUnicos = elementosUnicos(arrayNumeros);
+    publicar(arrayElementosUnicos);
+}
 
 botaoOrdenar.onclick = function () {
     if (arrayNumeros == 0) {
@@ -68,7 +75,7 @@ function publicar(conteudo) {
 
 function ordernamento(listaNumeros) {
     listaNumeros.sort(function (a, b) {
-        return a - b;
+        return a - b; //  ***
     });
 }
 
@@ -86,4 +93,31 @@ function turnOnSoma(numeroDiv) {
     somaDiv.classList.add('soma-ativada');
 }
 
+/*
+function contaElementosArray (array,Numero) {
+let num = array.lastIndexOf(Numero)-array.indexOf(Numero)+1;
+    console.log(num);
+}
 
+function unique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+
+
+console.log(unique);
+
+*/
+function agrupar (numeros) {
+    saidaDeDados = [];
+    numeros = ordernamento(numeros);
+    
+}
+
+function elementosUnicos (array){
+
+    return array.filter(unique);
+}
+
+function unique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
