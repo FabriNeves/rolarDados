@@ -2,13 +2,10 @@
 
 Acessar por : <a href = "https://FaSn0w.github.io/rolarDados">Link page gitHub</a>
 
-Add : atalhos para 6  10 12 e 20 lados.
+Pagina construida utilizando as tecnologias :
 
-Teste de modificação de arquivo
+ -html 
+ -css3
+ -javascript
 
-Testando nova key ssh
-
-Add : 
-  - Mudança de texto do imput
-  - Botões Centralizados
-  - Agrupar deletado
+Simples geração de numeros randomicos de 0 a 100.
