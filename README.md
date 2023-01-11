@@ -1,6 +1,6 @@
 # rolarDados
 
-Acessar por : <a href = "https://FaSn0w.github.io/rolarDados">Link page gitHub</a>
+Acessar por : <a href = "https://FaSn0w.github.io/rolarDados">Click aqui</a>
 
 Pagina construida utilizando as tecnologias :
 
@@ -9,3 +9,9 @@ Pagina construida utilizando as tecnologias :
  -javascript
 
 Simples geração de numeros randomicos de 0 a 100.
+
+## Pre-vizualização
+
+<center> 
+<img src="./img/layoutDaPagina.png"> 
+</center>
