@@ -15,3 +15,6 @@ Simples geração de numeros randomicos de 0 a 100.
 <center> 
 <img src="./img/layoutDaPagina.png"> 
 </center>
+
+
+<span> Pela sua simplicidade eu uso muito para testar requisições </span>
